@@ -17,7 +17,7 @@ job('NodeJS Docker example') {
             repositoryName('danikr238/docker-nodejs')
             tag('${GIT_REVISION,length=9}')
             dockerHostURI('tcp://192.168.0.92:2376')
-            registryCredentials('danikr238')
+            registryCredentials('dockerhub')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
